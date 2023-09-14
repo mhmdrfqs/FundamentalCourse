@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+    <nav class="logo" id="logo">
+        <div class="btn">
+            <div id="Btn-1" style="display: block;" class="btn-k">
+                <a href="#" onclick="switchKomponen(),switchKomponen2(), Swbutton(),dsplayBody(),toggleMode(), flipRectangle()">Keliling ></a>
+            </div>
+            <div id="Btn-2" style="display: none;" class="btn-l">
+                <a href="#" onclick="switchKomponen(), switchKomponen2(), Swbutton(),dsplayBody(),toggleMode(), flipRectangle()">Luas ></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="rectangle" id="rectangle">
+        <div class="front2">Luas Persegi & Rumusnya</div>
+        <div class="back2">Keliling Persegi & Rumusnya</div>
+    </div>
+
+    <header id="displayH1" style="display: block;">
+        <div class="head" >
+            <h2>Untuk menghitung Luas Persegi</h2>
+            <p>Silahkan masukkan nilai Sisi dari Persegi yang akan dihitung luasnya</p>
+        </div>
+
+    </header>
+
+    <header id="displayH2" style="display: none;">
+        <div class="head">
+            <h2>Untuk menghitung Keliling Persegi</h2>
+            <p>Silahkan masukkan nilai Sisi dari Persegi yang akan dihitung luasnya</p>
+        </div>      
+    </header>
+
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">Luas?</div>
+            <div class="back">Keliling?</div>
+        </div>
+    </div>
+
+    <section id="display1" style="display: block;">
+        <div>
+            <div class="fonts1 desc">
+                <center>
+                    <b>L = S x S</b>
+                </center>
+
+                <p>Dimana   :</p>
+                <p>L = Luas</p>
+                <p>S = Sisi</p>
+                <hr>
+                <label for="sisi">Masukkan Sisi Persegi :</label>
+            </div>
+            <br>
+            <input type="number" id="sisi" class="input1" placeholder="sisi">
+
+            <button onclick="htg_Luas()" class="button">Hitung</button>
+        </div>
+        <div class="result">
+            <p id="rumus"></p>
+            <p id="output"></p>
+            <p id="luas"></p>
+        </div>
+
+        <div>
+            
+        </div>
+    </section>
+
+    <section id="display2" style="display: none;">
+        <div>
+            <div class="fonts1 desc">
+                <center>
+                    <b class="fonts1">K = 4 x S</b>
+                </center>
+                
+                <p>Dimana   :</p>
+                <p>K = Keliling</p>
+                <p>S = Sisi</p>
+                <hr>
+                <label for="sisi">Masukkan Sisi Persegi :</label>
+            </div>
+            <br>
+            <form class="input2">
+                <input type="number" id="sisi2" placeholder="sisi">
+                <button onclick="htg_Keliling()" class="button">Hitung</button>
+            </form>
+            
+            
+            
+        </div>
+        <div class="result">
+            <p id="rumus2"></p>
+            <p id="output2"></p>
+            <p id="keliling"></p>
+        </div>
+        <div>
+            
+        </div>
+    </section>
+
+    <div></div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

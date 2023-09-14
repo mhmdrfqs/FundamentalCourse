@@ -1,0 +1,237 @@
+:root {
+    --primary: rgb(163, 255, 35);
+    --fonts: rgb(255, 255, 255);
+    --bgcolor: rgb(255, 165, 0);
+    --bgcolor2: rgb(0, 71, 236);
+    
+}
+
+body {
+  padding: 25px;
+  background-color: var(--bgcolor);
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-right: 1.5rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 1s ease-in-out, color 0.5s linear;
+}
+
+.dark-mode {
+  background-color: var(--bgcolor2);
+  color: yellow;
+  transition: background-color 0.5s ease-out, color 0.3s ease-out;
+}
+.head h2 {
+  font-size: 3.5rem;
+  font-weight: 750;
+  text-align: center;
+  position: relative;
+  transition: 1s;
+}
+
+.head 
+.head p{
+    font-size: 1.5rem;
+    font-weight: 750;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.btn {
+  text-align: left;
+}
+
+.logo .btn .btn-k a{
+    background-color: var(--bgcolor2);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: linear 0.3s;
+    border-radius: 1.5rem;
+}
+
+.logo .btn .btn-l a{
+    background-color: var(--bgcolor);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: linear 0.3s;
+    border-radius: 1.5rem;
+}
+
+.logo .btn a:hover {
+    transform: scale(1.1,1.1)
+}
+
+/* style.css */
+.flip-container {
+  perspective: 62.5rem;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: 50px auto;
+}
+
+.flipper {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flip-container.flipped .flipper {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.front {
+  background-color: var(--bgcolor2);
+}
+
+.back {
+  background-color: var(--bgcolor);
+  transform: rotateY(180deg);
+}
+
+.rectangle {
+  margin-top: 3rem;
+  width: 74.375rem;
+  height: 6.25rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  transform-origin: center;
+  perspective: 62.5rem;
+  transform: rotateY(0deg);
+}
+
+.rectangle.flipped2 {
+  transform: rotateY(180deg);
+}
+
+.rectangle .front2, .rectangle .back2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: var(--fonts);
+  border-radius: 20px; 
+  backface-visibility: hidden;
+}
+
+.rectangle .front2 {
+  background-color: var(--bgcolor2);
+}
+
+.rectangle .back2 {
+  background-color: var(--bgcolor);
+  transform: rotateY(180deg);
+}
+
+.fonts1 label {
+  font-size: 3rem;
+  padding-left: 4em;
+}
+
+.desc{
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+
+.result {
+  text-align: justify;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+input[type=number] {
+  width: 86%;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+}
+
+.button {
+  background-color: var(--primary);
+  border: none;
+  color: #3c461e;
+  padding: 1.25rem;
+  font-weight: 700;
+  padding-top: 12px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.25;
+  font-family: sans-serif;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button:hover {
+  background-color: rgb(215, 222, 247);
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 1023px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 60%;
+    }
+
+  .rectangle {
+    width: 58rem;
+    height: 6.25rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform-origin: center;
+    perspective: 1000px;
+    transform: rotateY(0deg);
+  }
+    
+}
+
+@media (max-width: 479px) {
+    html {
+        font-size: 40%;
+    }
+}
